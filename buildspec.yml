@@ -6,7 +6,7 @@ phases:
     commands: 
       - echo "Installing Dependencies"
       - npm install
-      - sudo npm install -g @angula/cli@10.0.8
+      - npm install -g @angular/cli@10.0.8
     build:
       commands:
         - echo "Building angular project"
