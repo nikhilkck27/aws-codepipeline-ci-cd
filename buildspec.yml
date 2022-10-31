@@ -10,8 +10,12 @@ phases:
     build:
       commands:
         - echo "Building angular project"
-        - ng build --prod
+        - ng build --configuration production
     post_builds:
       commands:
         - echo "updating files in the s3 bucket"
         - aws s3 sync dist/github-s3-angular-app/ s3://nikhilck2703 --delete
+
+
+
+    
